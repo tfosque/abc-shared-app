@@ -1,12 +1,9 @@
 import { NgModule } from '@angular/core';
 import { ProPlusApiComponent } from './pro-plus-api.component';
-
-
-
 @NgModule({
   declarations: [ProPlusApiComponent],
-  imports: [
-  ],
-  exports: [ProPlusApiComponent]
+  imports: [],
+  providers: [],
+  exports: [ProPlusApiComponent],
 })
-export class ProPlusApiModule { }
+export class ProPlusApiModule {}

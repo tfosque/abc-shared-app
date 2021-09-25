@@ -1,0 +1,11 @@
+{
+    "apps":
+    [
+        {
+            "appId": "",
+            "root": "projects/mobile-client",
+            "dependencyInstallCommand": "cd ../.. && npm install",
+            "webBuildCommand": "cd ../.. && npm run build"
+        }
+    ]
+  }
