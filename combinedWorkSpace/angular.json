@@ -1,0 +1,127 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "academyLib": {
+      "projectType": "library",
+      "root": "projects/academy-lib",
+      "sourceRoot": "projects/academy-lib/src",
+      "prefix": "academy",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/academy-lib/tsconfig.lib.json",
+            "project": "projects/academy-lib/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/academy-lib/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/academy-lib/src/test.ts",
+            "tsConfig": "projects/academy-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/academy-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/academy-lib/tsconfig.lib.json",
+              "projects/academy-lib/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "proPlus": {
+      "projectType": "library",
+      "root": "projects/pro-plus",
+      "sourceRoot": "projects/pro-plus/src",
+      "prefix": "proplus",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/pro-plus/tsconfig.lib.json",
+            "project": "projects/pro-plus/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/pro-plus/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/pro-plus/src/test.ts",
+            "tsConfig": "projects/pro-plus/tsconfig.spec.json",
+            "karmaConfig": "projects/pro-plus/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/pro-plus/tsconfig.lib.json",
+              "projects/pro-plus/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "proPlusApi": {
+      "projectType": "library",
+      "root": "projects/pro-plus-api",
+      "sourceRoot": "projects/pro-plus-api/src",
+      "prefix": "proplus-api",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/pro-plus-api/tsconfig.lib.json",
+            "project": "projects/pro-plus-api/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/pro-plus-api/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/pro-plus-api/src/test.ts",
+            "tsConfig": "projects/pro-plus-api/tsconfig.spec.json",
+            "karmaConfig": "projects/pro-plus-api/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/pro-plus-api/tsconfig.lib.json",
+              "projects/pro-plus-api/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }},
+  "defaultProject": "academyLib"
+}

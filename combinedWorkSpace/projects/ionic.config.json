@@ -1,0 +1,27 @@
+{
+  "projects": {
+    "appOne": {
+      "name": "appOne",
+      "integrations": {
+        "capacitor": {},
+        "cordova": {}
+      },
+      "type": "angular",
+      "root": "appOne"
+    },
+    "appTwo": {
+      "name": "appTwo",
+      "integrations": {},
+      "type": "angular",
+      "root": "appTwo"
+    },
+    "appThree": {
+      "name": "appThree",
+      "integrations": {
+        "capacitor": {}
+      },
+      "type": "angular",
+      "root": "appThree"
+    }
+  }
+}
